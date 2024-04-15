@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <form>
+        <h2>GET IN TOUCH</h2>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="name" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email" required>
+        </div>
+
+        <div>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" placeholder="phone number" required>
+        </div>
+
+        <div>
+            <label for="Subject">Subject</label>
+            <select name="subject" id="subject" required>
+                <option value="">Select</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">Fullstack</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="message">Your Message</label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+
+        <div class="btnSubmit">
+            <button type="button" id="sumbit" onclick="submitHandler()">sumbit</button>
+        </div>
+    </form>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
